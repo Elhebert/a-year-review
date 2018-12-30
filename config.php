@@ -58,5 +58,9 @@ return [
             'link' => 'https://www.dieterstinglhamber.me/blog/2018-looking-back-at-an-awesome-trying-year',
             'author' => 'Dieter Stinglhamber',
         ],
+        [
+            'link' => 'https://lukas-kaemmerling.de/blog/my-2018-recap',
+            'author' => 'Lukas Kämmerling',
+        ],
     ],
 ];
