@@ -66,5 +66,9 @@ return [
             'link' => 'http://www.abdelilahlbardi.com/post/good-bye-2018',
             'author' => 'Abdelilah Lbardi'
         ],
+        [
+            'link' => 'https://miguelpiedrafita.com/2018/',
+            'author' => 'Miguel Piedrafita'
+        ],
     ],
 ];
