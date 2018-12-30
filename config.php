@@ -62,5 +62,9 @@ return [
             'link' => 'https://lukas-kaemmerling.de/blog/my-2018-recap',
             'author' => 'Lukas Kämmerling',
         ],
+        [
+            'link' => 'http://www.abdelilahlbardi.com/post/good-bye-2018',
+            'author' => 'Abdelilah Lbardi'
+        ],
     ],
 ];
