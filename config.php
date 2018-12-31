@@ -74,5 +74,13 @@ return [
             'link' => 'https://link.medium.com/K6S0024V4S',
             'author' => 'Mohammed S. Shurrab'
         ],
+        [
+            'link' => 'https://medium.com/@yemiwebby/my-2018-year-in-review-step-in-the-right-direction-f7bbe0c11731',
+            'author' => 'Olususi Oluyemi'
+        ],
+        [
+            'link' => 'https://medium.com/@ireade/2018-month-by-month-708a0547c5e0',
+            'author' => 'Ire Aderinokun'
+        ],
     ],
 ];
