@@ -142,5 +142,9 @@ return [
             'link' => 'https://justinjackson.ca/2018-review',
             'author' => 'Justin Jackson',
         ],
+        [
+            'link' => 'https://joedixon.co.uk/2018-the-year-in-review',
+            'author' => 'Joe Dixon',
+        ],
     ],
 ];
