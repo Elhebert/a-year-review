@@ -12,23 +12,25 @@
       file and make a PR.
     </div>
 
-    <list class="my-16">
-      <list-item v-for="review in reviews" :key="review.name">
-        <a-link :href="review.link" class="text-3xl">
-          {{ review.author }}
-        </a-link>
-      </list-item>
-    </list>
+    <reviews-data>
+      <list slot-scope="{ reviews }" class="my-16">
+        <list-item v-for="review in reviews" :key="review.name">
+          <a-link :href="review.link" class="text-3xl">
+            {{ review.author }}
+          </a-link>
+        </list-item>
+      </list>
+    </reviews-data>
   </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-import reviews from '@/static/reviews.json'
 import ALink from '@/components/ui/ALink.vue'
 import List from '@/components/ui/List.vue'
 import ListItem from '@/components/ui/ListItem.vue'
+import ReviewsData from '@/components/Data/Reviews.vue'
 
 export default Vue.extend({
   name: 'Home',
@@ -37,10 +39,7 @@ export default Vue.extend({
     ALink,
     List,
     ListItem,
+    ReviewsData,
   },
-
-  data: () => ({
-    reviews,
-  }),
 })
 </script>

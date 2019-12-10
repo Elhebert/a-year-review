@@ -9,4 +9,8 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  transition-property: background-color, color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
 }
