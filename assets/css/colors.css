@@ -1,0 +1,32 @@
+:root {
+  --black-russian: hsl(220 8% 15%);
+  --bunker: hsl(0 0% 18%);
+  --jumbo: hsl(0 0% 53%);
+  --lily-white: hsl(0 0% 92%);
+  --white: hsl(0 0% 100%);
+  --bright-turquoise: hsl(167 100% 50%);
+  --ultramarine-blue: hsl(224 88% 57%);
+  --astral: hsl(207 55% 53%);
+  --red: hsl(355 100% 45%);
+
+  --text-default: var(--bunker);
+  --invers: var(--white);
+  --dimmed: var(--lily-white);
+  --accent: var(--ultramarine-blue);
+}
+
+.dark-mode {
+  --text-default: var(--white);
+  --invers: var(--bunker);
+  --dimmed: var(--black-russian);
+  --accent: var(--bright-turquoise);
+}
+
+@media (prefers-color-schema: dark) {
+  :root {
+    --text-default: var(--white);
+    --invers: var(--bunker);
+    --dimmed: var(--black-russian);
+    --accent: var(--bright-turquoise);
+  }
+}

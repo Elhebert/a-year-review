@@ -1,27 +1,45 @@
 {
-    "private": true,
-    "scripts": {
-        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "dev": "npm run local",
-        "prod": "npm run production",
-        "watch": "npm run local -- --watch",
-        "lint": "prettier --write 'source/_assets/{css,js}/**/*'"
-    },
-    "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "browser-sync-webpack-plugin": "^2.0.1",
-        "cross-env": "^3.2.3",
-        "extra-watch-webpack-plugin": "^1.0.3",
-        "hasbin": "^1.2.3",
-        "laravel-mix": "^4.1.4",
-        "laravel-mix-purgecss": "^4.2.0",
-        "node-cmd": "^3.0.0",
-        "postcss-easy-import": "^3.0.0",
-        "sass": "^1.23.0",
-        "sass-loader": "^7.3.1",
-        "tailwindcss": "^0.7.4",
-        "yargs": "^4.6.0"
+  "name": "a-year-review",
+  "version": "1.0.0",
+  "description": "Yearly review by tech people",
+  "author": "Dieter Stinglhamber",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.0",
+    "@nuxt/typescript-runtime": "^0.3.1",
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^1.2.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^2.6.0",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.16.4",
+    "vue-jest": "^4.0.0-0"
+  }
 }

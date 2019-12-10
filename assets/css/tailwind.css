@@ -1,11 +1,12 @@
-@import 'tailwindcss/preflight';
+@import 'tailwindcss/base';
+
+@import './colors.css';
 
 @import 'tailwindcss/components';
-
 @import 'tailwindcss/utilities';
+@import 'tailwindcss/screens';
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
