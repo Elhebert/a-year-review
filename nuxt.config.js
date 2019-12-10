@@ -38,7 +38,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: [],
   /*
    ** Build configuration
    */
@@ -46,13 +46,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(/* config, ctx */) {},
-  },
-
-  pwa: {
-    manifest: {
-      name: process.env.npm_package_name,
-      lang: 'en',
-    },
+    extend() {},
   },
 }

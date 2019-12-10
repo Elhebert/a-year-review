@@ -1,10 +1,10 @@
 <template>
   <div class="font-sans flex flex-col min-h-screen">
-    <div class="text-center container max-w-2xl mx-auto">
+    <header class="text-center container max-w-2xl mx-auto">
       <h-one>
         2019 in reviews
       </h-one>
-    </div>
+    </header>
 
     <nuxt />
 
