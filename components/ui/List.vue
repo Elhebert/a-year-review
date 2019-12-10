@@ -1,13 +1,13 @@
 <template>
-  <main class="container max-w-2xl mx-auto">
+  <ul class="list-reset">
     <slot></slot>
-  </main>
+  </ul>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Container'
+  name: 'List',
 })
 </script>

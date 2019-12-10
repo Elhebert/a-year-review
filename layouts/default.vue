@@ -1,10 +1,10 @@
 <template>
   <div class="font-sans flex flex-col min-h-screen">
-    <Container>
-      <Heading>
+    <div class="text-center container max-w-2xl mx-auto">
+      <h-one>
         2019 in reviews
-      </Heading>
-    </Container>
+      </h-one>
+    </div>
 
     <nuxt />
 
@@ -15,16 +15,14 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import Container from '@/components/ui/Container.vue'
 import Footer from '@/components/Footer.vue'
-import Heading from '@/components/ui/Heading.vue'
+import HOne from '@/components/ui/HOne.vue'
 
 export default Vue.extend({
   name: 'Home',
   components: {
-    Container,
     Footer,
-    Heading
-  }
+    HOne,
+  },
 })
 </script>

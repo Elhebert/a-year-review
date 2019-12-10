@@ -7,14 +7,23 @@
 module.exports = {
   theme: {
     colors: {
+      'black-russian': 'var(--black-russian)',
+      bunker: 'var(--bunker)',
+      jumbo: 'var(--jumbo)',
+      'lily-white': 'var(--lily-white)',
+      white: 'var(--white)',
+      'bright-turquoise': 'var(--bright-turquoise)',
+      'ultramarine-blue': 'var(--ultramarine-blue)',
+
+      astral: 'var(--astral)',
+      red: 'var(--red)',
+
       default: 'var(--text-default)',
       invers: 'var(--invers)',
       accent: 'var(--accent)',
       dimmed: 'var(--dimmed)',
-      astral: 'var(--astral)',
-      red: 'var(--red)'
-    }
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 }

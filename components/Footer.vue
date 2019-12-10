@@ -1,37 +1,17 @@
 <template>
-  <footer class="w-full text-center text-default p-16 bg-dimmed">
+  <footer class="w-full text-center text-jumbo p-16 bg-dimmed">
     <p class="mb-4">
       Made by
-      <a
-        class="text-default hover:no-underline"
-        href="https://www.dieterstinglhamber.me"
-        >Elhebert</a
-      >
-      using&nbsp;<a
-        class="text-default hover:no-underline"
-        href="https://tailwindcss.com"
-        >Tailwind CSS</a
-      >, powered by&nbsp;<a
-        class="text-default hover:no-underline"
-        href="https://nuxtjs.org"
-        >Nuxt.js</a
-      >
-      and hosted on&nbsp;<a
-        class="text-default hover:no-underline"
-        href="https://www.netlify.com"
-        >Netlify</a
-      >.
+      <a-link href="https://www.dieterstinglhamber.me">Elhebert</a-link>
+      using&nbsp;<a-link href="https://tailwindcss.com">Tailwind CSS</a-link>,
+      powered by&nbsp;<a-link href="https://nuxtjs.org">Nuxt.js</a-link> and
+      hosted on&nbsp;<a-link href="https://www.netlify.com">Netlify</a-link>.
     </p>
     <p>
       Design by
-      <a
-        class="text-red hover:no-underline"
-        href="https://www.dieterstinglhamber.me"
-        >Elhebert</a
-      >&nbsp;&amp;&nbsp;theme by
-      <a class="text-red hover:no-underline" href="https://twitter.com/meduzen"
-        >Meduzen</a
-      >
+      <a-link href="https://www.dieterstinglhamber.me">Elhebert</a-link>
+      &nbsp;&amp;&nbsp;theme by
+      <a-link href="https://twitter.com/meduzen">Meduzen</a-link>
     </p>
   </footer>
 </template>
@@ -39,7 +19,13 @@
 <script lang="ts">
 import Vue from 'vue'
 
+import ALink from '@/components/ui/ALink.vue'
+
 export default Vue.extend({
-  name: 'Footer'
+  name: 'Footer',
+
+  components: {
+    ALink,
+  },
 })
 </script>

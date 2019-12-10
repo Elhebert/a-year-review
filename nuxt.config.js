@@ -11,15 +11,14 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: 'var(--accent)' },
+  loading: { color: '#3164f2' },
   /*
    ** Global CSS
    */
@@ -34,7 +33,7 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
   ],
   /*
    ** Nuxt.js modules
@@ -47,6 +46,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(/* config, ctx */) {}
-  }
+    extend(/* config, ctx */) {},
+  },
+
+  pwa: {
+    manifest: {
+      name: process.env.npm_package_name,
+      lang: 'en',
+    },
+  },
 }
