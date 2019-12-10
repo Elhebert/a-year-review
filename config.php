@@ -158,5 +158,10 @@ return [
             'link' => 'https://medium.com/@sarah_edo/reflections-on-2018-f0d4da8ff15e',
             'author' => 'Sarah Drasner',
         ],
+        [
+            'link' => 'https://blog.lichter.io/posts/2018-my-recap/',
+            'author' => 'Alexander Lichter',
+        ],
+        
     ],
 ];
