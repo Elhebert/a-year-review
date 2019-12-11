@@ -9,9 +9,8 @@
     </p>
     <p>
       Design by
-      <a-link href="https://www.dieterstinglhamber.me">Elhebert</a-link>
-      &nbsp;&amp;&nbsp;theme by
-      <a-link href="https://twitter.com/meduzen">Meduzen</a-link>
+      <a-link href="https://www.dieterstinglhamber.me">Elhebert</a-link> &amp;
+      theme by <a-link href="https://twitter.com/meduzen">Meduzen</a-link>
     </p>
   </footer>
 </template>
