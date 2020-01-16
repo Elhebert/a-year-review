@@ -32,6 +32,7 @@
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/tailwindcss": "^1.2.0",
+    "@vue/composition-api": "^0.3.4",
     "@vue/test-utils": "^1.0.0-beta.27",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^4.1.0",

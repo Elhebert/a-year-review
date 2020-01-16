@@ -12,34 +12,35 @@
       file and make a PR.
     </div>
 
-    <reviews-data>
-      <list slot-scope="{ reviews }" class="my-16">
-        <list-item v-for="review in reviews" :key="review.name">
-          <a-link :href="review.link" class="text-3xl">
-            {{ review.author }}
-          </a-link>
-        </list-item>
-      </list>
-    </reviews-data>
+    <list class="my-16">
+      <list-item v-for="review in reviews" :key="review.name">
+        <a-link :href="review.link" class="text-3xl">
+          {{ review.author }}
+        </a-link>
+      </list-item>
+    </list>
   </main>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { createComponent } from '@vue/composition-api'
 
 import ALink from '@/components/ui/ALink.vue'
 import List from '@/components/ui/List.vue'
 import ListItem from '@/components/ui/ListItem.vue'
-import ReviewsData from '@/components/data/Reviews.vue'
+import getReviews from '@/assets/ts/reviews.ts'
 
-export default Vue.extend({
-  name: 'Home',
+export default createComponent({
+  setup() {
+    return {
+      reviews: getReviews(),
+    }
+  },
 
   components: {
     ALink,
     List,
     ListItem,
-    ReviewsData,
   },
 })
 </script>

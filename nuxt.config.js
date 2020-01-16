@@ -45,6 +45,8 @@ export default {
     '@nuxt/typescript-build',
   ],
 
+  plugins: ['~/plugins/composition-api'],
+
   purgeCSS: {
     whitelist: ['dark-mode', 'bg-invers'],
   },
